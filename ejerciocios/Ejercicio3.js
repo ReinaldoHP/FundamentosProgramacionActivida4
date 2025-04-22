@@ -1,11 +1,11 @@
 let producto = 1;
-let contador = 0;
-let numero = 1;
+let impares = [];
 
-while (contador < 10) {
-  producto *= numero;
-  numero += 2; // Avanza al siguiente número impar
-  contador++;
+for (let i = 1; impares.length < 10; i++) {
+  if (i % 2 !== 0) {
+    impares.push(i);
+    producto *= i;
+  }
 }
 
-console.log("El producto de los 10 primeros números impares es: " + producto);
+alert("Los 10 primeros números impares son: " + impares.join(", "));
