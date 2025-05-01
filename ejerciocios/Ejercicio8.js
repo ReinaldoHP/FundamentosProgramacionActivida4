@@ -1,8 +1,7 @@
 // Parte 1: Sueldos
 
 // Se solicita al usuario cuántos sueldos va a ingresar
-// Pedimos al usuario la cantidad de sueldos que va a ingresar
-let N = parseInt(prompt("¿Cuántos sueldos vas a ingresar?"));
+let N = parseInt(prompt("¿Cuántos sueldos vas a ingresar en total?"));
 
 let sueldos = [];
 for (let i = 0; i < N; i++) {
@@ -10,9 +9,14 @@ for (let i = 0; i < N; i++) {
   sueldos.push(sueldo);
 }
 
-// Buscamos el sueldo máximo
+// Calculamos el sueldo máximo, mínimo y promedio
 let sueldoMaximo = Math.max(...sueldos);
 
-// Mostramos el resultado
-alert(`El sueldo máximo es: ${sueldoMaximo}`);
+
+// Mostramos resultados en consola
+console.log("Sueldos ingresados:", sueldos);
+console.log("Sueldo máximo:", sueldoMaximo);
+
+// Mostramos resultados con alert
+alert(`Sueldo máximo: ${sueldoMaximo}\nSueldos ingresados: ${sueldos.join(', ')}`);
 

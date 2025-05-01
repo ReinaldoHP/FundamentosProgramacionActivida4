@@ -3,10 +3,12 @@ let litrosArticulo1 = 0;
 let litrosTotales = 0;
 let facturasMayores600 = 0;
 
+alert('Por favor dejite las 5 facturas :')
+
 for (let i = 1; i <= 5; i++) {
-  let codigo = parseInt(prompt(`Factura ${i} - Ingresa el código del artículo:`));
-  let litros = parseFloat(prompt(`Factura ${i} - Ingresa la cantidad vendida en litros:`));
-  let precio = parseFloat(prompt(`Factura ${i} - Ingresa el precio por litro:`));
+  let codigo = parseInt(prompt(`Factura ${i} - Degite el código del artículo:`));
+  let litros = parseFloat(prompt(`Factura ${i} - Degite la cantidad vendida en litros:`));
+  let precio = parseFloat(prompt(`Factura ${i} - Degite el precio por litro:`));
 
   if (isNaN(codigo) || isNaN(litros) || isNaN(precio)) {
     alert("Datos inválidos. Intenta de nuevo.");
